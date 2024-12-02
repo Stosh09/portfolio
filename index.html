@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>My Portfolio</title>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="mediaqueries.css" />
@@ -15,12 +16,12 @@
 					<li><a href="#about">About</a></li>
 					<li><a href="#experience">Experience</a></li>
 					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contacts">Contacts</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 		<nav id="hamburger-nav">
-			<div class="logo">Stosh Ochieng Odhiambo</div>
+			<div class="logo">John Doe</div>
 			<div class="hamburger-menu">
 				<div class="hamburger-icon" onclick="toggleMenu()">
 					<span></span>
@@ -31,37 +32,92 @@
 					<li><a href="#about" onclick="toggleMenu()">About</a></li>
 					<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
 					<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-					<li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+					<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 				</div>
 			</div>
 		</nav>
-
 		<section id="profile">
 			<div class="section__pic-container">
-				<img src="./assets/DSC_1311.JPG"
-					alt="Stosh Ochieng Odhiambo profile picture">
+				<img src="./assets/DSC_1311.JPG" alt="Stosh Ochieng profile picture" />
 			</div>
 			<div class="section__text">
-				<p class="section__text__p1">Hello I'm</p>
+				<p class="section__text__p1">Hello, I'm</p>
 				<h1 class="title">Stosh Ochieng</h1>
-				<p class="section__text__p2">Fullstack Developer</p>
+				<p class="section__text__p2">Fullstack developer</p>
 				<div class="btn-container">
-					<button class="btn btn-color-2"
-						onclick="window.open('./assets/Stosh_Ochieng_CV (5).pdf')">Download
-						CV</button>
-					<button class="btn btn-color-2"
-						onclick="window.open('./assets/Cover Letter.pdf')">Download Cover
-						Letter</button>
-					<button class="btn btn-color-1"
-						onclick="location.href='./#contact'">Contact Information</button>
+					<button
+						class="btn btn-color-2"
+						onclick="window.open('./assets/Stosh_Ochieng_CV (5).pdf')">
+						Download CV
+					</button>
+					<button
+						class="btn btn-color-2"
+						onclick="window.open('./assets/Cover Letter.pdf')">
+						Download CV
+					</button>
+					<button class="btn btn-color-1" onclick="location.href='./#contact'">
+						Contact Info
+					</button>
 				</div>
 				<div id="socials-container">
-					<img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon"
-						onclick="location.href='https://www.linkedin.com/in/stosh-ochieng-98b852183/'">
-					<img src="./assets/github.png" alt="My Github Profile" class="icon"
-						onclick="location.href='https://github.com/Stosh09'">
+					<img
+						src="./assets/linkedin.png"
+						alt="My LinkedIn profile"
+						class="icon"
+						onclick="location.href='https://www.linkedin.com/in/stosh-ochieng-98b852183/'" />
+					<img
+						src="./assets/github.png"
+						alt="My Github profile"
+						class="icon"
+						onclick="location.href='https://github.com/Stosh09'" />
 				</div>
 			</div>
+		</section>
+		<section id="about">
+			<p class="section__text__p1">Get To Know More</p>
+			<h1 class="title">About Me</h1>
+			<div class="section-container">
+				<div class="section__pic-container">
+					<img
+						src="./assets/101 jpg-1.jpg"
+						alt="Profile picture"
+						class="about-pic" />
+				</div>
+				<div class="about-details-container">
+					<div class="about-containers">
+						<div class="details-container">
+							<img
+								src="./assets/experience.png"
+								alt="Experience icon"
+								class="icon" />
+							<h3>Experience</h3>
+							<p>2+ years <br />MERN Stack developer</p>
+						</div>
+						<div class="details-container">
+							<img
+								src="./assets/education.png"
+								alt="Education icon"
+								class="icon" />
+							<h3>Education</h3>
+							<p>Lakehub Academy Mern stack bootcamp<br />ALX Africa Software
+								Engineering</p>
+						</div>
+					</div>
+					<div class="text-container">
+						<p>
+							I am a fullstack developer with 2+ years of experience in the MERN
+							stack. I am passionate about building scalable and efficient web
+							applications. I am a quick learner and I am always eager to learn new
+							technologies. I am also a team player and I am always ready to work.
+						</p>
+					</div>
+				</div>
+			</div>
+			<img
+				src="./assets/arrow.png"
+				alt="Arrow icon"
+				class="icon arrow"
+				onclick="location.href='./#experience'" />
 		</section>
 		<script src="script.js"></script>
 	</body>

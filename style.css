@@ -1,7 +1,5 @@
-/*General*/
-
+/* GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -19,13 +17,15 @@ p {
   color: rgb(85, 85, 85);
 }
 
-/* Transition */
+/* TRANSITION */
 
 a,
 .btn {
   transition: all 300ms ease;
 }
-/*Desktop Navigation*/
+
+/* DESKTOP NAV */
+
 nav,
 .nav-links {
   display: flex;
@@ -64,7 +64,8 @@ a:hover {
   cursor: default;
 }
 
-/*HamBurger Menu*/
+/* HAMBURGER MENU */
+
 #hamburger-nav {
   display: none;
 }
@@ -78,8 +79,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
   height: 24px;
+  width: 30px;
   cursor: pointer;
 }
 
@@ -94,11 +95,11 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  width: fit-content;
   background-color: white;
+  width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links a {
@@ -120,7 +121,7 @@ a:hover {
 }
 
 .hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate (10px, 5px);
+  transform: rotate(45deg) translate(10px, 5px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
@@ -128,7 +129,7 @@ a:hover {
 }
 
 .hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate (10px, -5px);
+  transform: rotate(-45deg) translate(10px, -5px);
 }
 
 .hamburger-icon span:first-child {
@@ -143,7 +144,8 @@ a:hover {
   transform: none;
 }
 
-/*Sections*/
+/* SECTIONS */
+
 section {
   padding-top: 4vh;
   height: 96vh;
@@ -156,7 +158,8 @@ section {
   display: flex;
 }
 
-/*Profile section*/
+/* PROFILE SECTION */
+
 #profile {
   display: flex;
   justify-content: center;
@@ -201,13 +204,15 @@ section {
   gap: 1rem;
 }
 
-/*Icons*/
+/* ICONS */
+
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
-/*Buttons*/
+/* BUTTONS */
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -252,4 +257,57 @@ section {
 
 .btn-container {
   gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
 }
